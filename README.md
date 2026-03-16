@@ -12,14 +12,13 @@ Análise de dados de acidentes de trânsito no Brasil utilizando **R**. O projet
 
 ---
 
-## Principais Insights
+### Principais Insights
 
-### 1. Acidentes por Fase do Dia e Tipo de Acidente
+#### Fase do Dia
+![Acidentes por fase do dia](outputs/graficos/fase_dia.png)
 
-<div align="center">
-<img src="outputs/graficos/fase_dia.png" width="45%" alt="Acidentes por fase do dia">
-<img src="outputs/graficos/tipos_acidente.png" width="45%" alt="Tipos de acidentes registrados">
-</div>
+#### Tipos de Acidentes
+![Tipos de acidentes registrados](outputs/graficos/tipos_acidente.png)
 
 - **Fase do dia:** maior quantidade de acidentes ocorre durante o período diurno.  
 - **Tipos de acidentes:** colisões traseiras, laterais e saídas de pista são os mais frequentes.
