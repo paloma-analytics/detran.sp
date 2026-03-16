@@ -1,47 +1,45 @@
-# Análise de Dados de Acidentes de Trânsito – Brasil 2024
+# Análise de Dados de Acidentes de Trânsito – DETRAN 2024
 
-## Aluno
-Paloma A. Santos – Curso: Ciência de Dados
+## Descrição do Projeto
+Análise de dados de acidentes de trânsito no Brasil utilizando **R**. O projeto explora padrões de acidentes, fatores que influenciam sua ocorrência e aplica conceitos estatísticos como probabilidade, teste qui-quadrado e correlação.
 
-## Objetivo
-Explorar dados reais de acidentes de trânsito no Brasil, aplicando manipulação de dados, visualização e análise probabilística utilizando R.
-
-## Conjunto de Dados
-Arquivo: `datatran2024.csv`  
-Contém informações sobre:
-- Estado (UF)
-- Condição climática
-- Fase do dia
-- Tipo de acidente
-- Número de veículos e pessoas envolvidas
+---
 
 ## Tecnologias Utilizadas
-- **R** (linguagem de programação)
-- **dplyr** (manipulação de dados)
-- **ggplot2** (visualização)
-- **Google Colab / RStudio** (ambiente de execução)
+- **R** – Linguagem de programação.  
+- **RStudio / Google Colab** – Ambiente para rodar o notebook.  
+- **Pacotes R:** `dplyr`, `ggplot2`.  
+
+---
 
 ## Principais Insights
-- **Estado com mais acidentes:** SP  
-- **Período do dia com mais acidentes:** Pleno dia  
-- **Tipos mais frequentes de acidentes:** Colisão traseira, colisão lateral, saída de pista  
-- **Influência do clima:** Condições meteorológicas têm relação com o tipo de acidente (teste qui-quadrado, p < 0,05)  
-- **Média de veículos envolvidos:** ~2 veículos por acidente  
-- **Correlação veículos x feridos:** muito fraca (0,061), outros fatores influenciam mais
 
-## Visualizações
+### 1. Acidentes por Fase do Dia e Tipo de Acidente
 
-### Acidentes por fase do dia
-![Acidentes por fase do dia](outputs/graficos/fase_dia.png)
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <img src="outputs/graficos/fase_dia.png" width="45%" alt="Acidentes por fase do dia">
+  <img src="outputs/graficos/tipos_acidente.png" width="45%" alt="Tipos de acidentes registrados">
+</div>
 
-### Tipos de acidentes registrados
-![Tipos de acidentes](outputs/graficos/tipos_acidente.png)
+- **Fase do dia:** maior quantidade de acidentes ocorre durante o período diurno.  
+- **Tipos de acidentes:** colisões traseiras, laterais e saídas de pista são os mais frequentes.
 
-## Como rodar o projeto
-1. Baixar todos os arquivos do repositório.  
-2. Abrir `Analise_Acidentes.ipynb` no Google Colab ou RStudio.  
-3. Instalar pacotes: `dplyr`, `ggplot2`.  
-4. Executar o notebook/script para reproduzir gráficos e resultados.
+### 2. Teste Qui-Quadrado
+- Relação entre condição meteorológica e tipo de acidente: **p < 0,05**, indicando relação estatística significativa.
 
-## Referências
-- [Projeto Integrado Ciência de Dados – Anderson Salata](https://github.com/AndersonSalata/projeto-integrado-ciencia-dedados)
+### 3. Intervalo de Confiança
+- Média de veículos envolvidos: ~1,99 por acidente.  
+- Intervalo de confiança 95%: 1,986 – 2,004 veículos.
+
+### 4. Correlação
+- Correlação entre número de veículos e feridos: 0,061 (muito fraca).  
+- Sugere que outros fatores influenciam mais a gravidade dos acidentes.
+
+---
+
+## Como Rodar o Projeto
+1. Abra o notebook `Notebooks/Analise_Acidentes.ipynb` no **Google Colab** ou **RStudio**.  
+2. Instale os pacotes necessários:  
+```r
+install.packages("dplyr")
+install.packages("ggplot2")
