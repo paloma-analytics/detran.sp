@@ -3,7 +3,7 @@
 ## Descrição do Projeto
 Este projeto tem como objetivo analisar um conjunto de dados de acidentes de trânsito no Brasil utilizando a linguagem **R**. A análise explora padrões de acidentes, fatores que influenciam sua ocorrência e aplica conceitos estatísticos como probabilidade, teste qui-quadrado e correlação.
 
-O projeto permite visualizar insights importantes sobre segurança no trânsito e serve como portfólio de análise de dados.
+O projeto permite visualizar insights importantes sobre segurança no trânsito.
 
 ---
 
