@@ -56,9 +56,3 @@ O dataset utilizado é `datatran2024.csv` e contém informações como:
 
 ---
 
-## Como Rodar o Projeto
-1. Abra o notebook `notebooks/Analise_Acidentes.ipynb` no **Google Colab** ou **RStudio**.  
-2. Certifique-se de ter os pacotes instalados:  
-```r
-install.packages("dplyr")
-install.packages("ggplot2")
